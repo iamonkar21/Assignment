@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="/expense/add" method="post">
+<form action="http://localhost:8080/Expense_Manager_war/add" method="post">
     <table style="border: 10px">
         <tr>
             <td>Title</td>
@@ -22,12 +22,9 @@
         </tr>
         <tr>
             <td>Payment Mode</td>
-            <td><input type="text" name="paymentMode"></td>
+            <td><input type="text" name="payment_mode"></td>
         </tr>
-        <tr>
-            <td>Date and Time</td>
-            <td><input type="datetime-local" name="time"></td>
-        </tr>
+
         <tr>
             <td><input type="submit" value="Add Expense"></td>
         </tr>

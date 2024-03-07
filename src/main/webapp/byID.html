@@ -1,10 +1,25 @@
+<!-- expense.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Expense</title>
 </head>
 <body>
-<form action="/by-id" method="get"></form>
+
+<h1>Show Expense</h1>
+
+<form action="http://localhost:8080/Expense_Manager_war/GetExpence" method="get">
+    <label for="id">Expense ID:</label>
+    <input type="text" id="id" name="id" required>
+    <button type="submit">Show Expense</button>
+</form>
+
+<div id="expenseData">
+    <!-- Expense data will be displayed here -->
+</div>
+
 </body>
 </html>

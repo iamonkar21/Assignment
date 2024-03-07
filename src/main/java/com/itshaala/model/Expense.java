@@ -11,10 +11,18 @@ import java.sql.Time;
 @Builder
 
 public class Expense {
+    private int id;
     private String title;
     private double amount;
     private String note;
     private Date date;
     private Time time;
-    private String paymentMode;
+    private String payment_mode;
+
+//    public String getId() {
+//        return null;
+//    }
+//
+//    public void setId(int id) {
+//    }
 }

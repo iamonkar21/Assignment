@@ -1,12 +1,23 @@
+<!-- all_expenses.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Get All Expenses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Expenses</title>
 </head>
 <body>
-<form action="/list"  method="get">
 
+<h1>All Expenses</h1>
+
+<form action="http://localhost:8080/Expense_Manager_war/list" method="get">
+    <button type="submit">Show All Expenses</button>
 </form>
+
+<div id="expensesData">
+    <!-- Expenses data will be displayed here -->
+</div>
+
 </body>
 </html>
